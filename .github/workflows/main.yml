@@ -1,9 +1,9 @@
 on:
   # Triggers the workflow on push or pull request events but only for the "master" branch
   push:
-    branches: [ "master" ]
+    branches: [ "master", "gh-pages" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "master", "gh-pages" ]
 name: Daily Jobs
 jobs:
   renovate:
