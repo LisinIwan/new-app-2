@@ -1,6 +1,8 @@
+{
   "hostRules": [
     {
       "domainName": "github.com",
       "token": "replace with your unencrypted personal access token"
     }
   ]
+}
