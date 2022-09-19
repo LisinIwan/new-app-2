@@ -36,5 +36,5 @@ jobs:
         env:
           RENOVATE_REPOSITORIES: LisinIwan/new-app
           RENOVATE_TOKEN: ${{ secrets.RENOVATE_TOKEN }}
-          RENOVATE_AUTOMERGE: true # optional, see below
+          RENOVATE_AUTOMERGE: false # optional, see below
           GITHUB_COM_TOKEN: ${{ secrets.RENOVATE_TOKEN }}
