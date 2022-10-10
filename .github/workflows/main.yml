@@ -24,6 +24,11 @@ on:
         type: environment
         required: true
 name: Daily Jobs
+
+defaults:
+  run:
+    shell: bash
+
 jobs:
   renovate:
     name: Renovate
@@ -32,9 +37,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
       - name: Run Renovate
-        uses: docker://renovate/renovate
-        env:
-          RENOVATE_REPOSITORIES: LisinIwan/new-app
-          RENOVATE_TOKEN: ${{ secrets.RENOVATE_TOKEN }}
-          RENOVATE_AUTOMERGE: false # optional, see below
-          GITHUB_COM_TOKEN: ${{ secrets.RENOVATE_TOKEN }}
+        run: |
+          npm install -g yarn
+          yarn renovate
