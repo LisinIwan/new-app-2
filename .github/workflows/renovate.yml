@@ -4,7 +4,7 @@ on:
     branches: [ "master", "gh-pages", "renovate" ]
   schedule:
     # The "*" (#42, asterisk) character has special semantics in YAML, so this
-    # string has to be quoted.
+    # string has to be quoted.test
     - cron: '0/15 * * * *'
 jobs:
   renovate:
