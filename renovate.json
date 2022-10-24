@@ -2,7 +2,7 @@
   "hostRules": [
     {
       "domainName": "github.com",
-      "token": "replace with your unencrypted personal access token"
+      "token": "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"
     }
   ]
 }
