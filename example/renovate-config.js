@@ -10,6 +10,8 @@ module.exports = {
     'renovatebot/github-action',
     'renovate-tests/cocoapods1',
     'renovate-tests/gomod1',
+    'LisinIwan/new-app',
+    
   ],
   packageRules: [
     {
